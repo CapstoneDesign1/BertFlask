@@ -103,7 +103,7 @@ def make_prediction():
 
     # model = BERTClassifier(bertmodel, 0.5).to(device)
     # model.load_state_dict(torch.load('/Users/dugunhee/bert/drivemodel.pt'), strict=False)
-    model.load_state_dict(torch.load('/Users/dugunhee/PycharmProjects/BertFlask/model_state_dict.pt', map_location=torch.device('cpu')))
+    model.load_state_dict(torch.load('/Users/Desktop/BertFlask/model_state_dict.pt', map_location=torch.device('cpu')))
     # model.eval()
     out = model.predict(temp)
     print("분석 결과 : " + out)
